@@ -1,0 +1,16 @@
+.App {
+  background-color: #ffffff;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px 20px;
+  min-height: 100vh;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .App {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+}
