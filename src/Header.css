@@ -226,3 +226,71 @@
         width: 100%;
     }
 }
+
+.task-input {
+    margin-bottom: 15px;
+}
+
+.due-date-time-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    gap: 15px;
+}
+
+.due-date-field, .due-time-field {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.due-date-field label, .due-time-field label {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: #555;
+    text-align: left;
+}
+
+.due-date-field input, .due-time-field input {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
+
+@media (max-width: 480px) {
+    .due-date-time-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+.description-field {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.description-field label {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: #555;
+    text-align: left;
+}
+
+.description-field textarea {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    resize: vertical;
+    min-height: 60px;
+    font-family: inherit;
+}
+
+.description-field textarea:focus {
+    border-color: #4caf50;
+    box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
+    outline: none;
+}
